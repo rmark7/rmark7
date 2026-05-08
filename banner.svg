@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 280" width="1280" height="280" role="img" aria-label="Mark Roderick">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0a0c"/>
+      <stop offset="55%" stop-color="#4a1820"/>
+      <stop offset="100%" stop-color="#722F37"/>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F5EFE6" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#F5EFE6" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#F5EFE6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F5EFE6" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F5EFE6" stroke-width="0.4" stroke-opacity="0.06"/>
+    </pattern>
+
+    <!-- Dark vignette around eyes (suggests shadowed face) -->
+    <radialGradient id="darkVeil" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Eye glow -->
+    <radialGradient id="eyeGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFD78A" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#E8A04A" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E8A04A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Eye iris gradient -->
+    <radialGradient id="iris" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFE4A8"/>
+      <stop offset="60%" stop-color="#E8A04A"/>
+      <stop offset="100%" stop-color="#8B5A1F"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1280" height="280" fill="url(#bg)"/>
+  <rect width="1280" height="280" fill="url(#grid)"/>
+
+  <!-- Dark veil on right where eyes will sit (creates "shadowed face" feeling) -->
+  <ellipse cx="1100" cy="140" rx="220" ry="160" fill="url(#darkVeil)"/>
+
+  <!-- Outer glow halos around each eye -->
+  <ellipse cx="1040" cy="140" rx="80" ry="60" fill="url(#eyeGlow)"/>
+  <ellipse cx="1180" cy="140" rx="80" ry="60" fill="url(#eyeGlow)"/>
+
+  <!-- LEFT EYE -->
+  <g>
+    <!-- almond shape (eye outline / lid) -->
+    <path d="M 1010 140
+             Q 1040 118, 1070 140
+             Q 1040 162, 1010 140 Z"
+          fill="url(#iris)"/>
+    <!-- vertical slit pupil -->
+    <ellipse cx="1040" cy="140" rx="2.5" ry="14" fill="#0a0203"/>
+    <!-- specular highlight -->
+    <circle cx="1037" cy="135" r="1.8" fill="#FFFFFF" opacity="0.85"/>
+  </g>
+
+  <!-- RIGHT EYE -->
+  <g>
+    <path d="M 1150 140
+             Q 1180 118, 1210 140
+             Q 1180 162, 1150 140 Z"
+          fill="url(#iris)"/>
+    <ellipse cx="1180" cy="140" rx="2.5" ry="14" fill="#0a0203"/>
+    <circle cx="1177" cy="135" r="1.8" fill="#FFFFFF" opacity="0.85"/>
+  </g>
+
+  <!-- Top hairline above name -->
+  <rect x="80" y="100" width="200" height="1" fill="#F5EFE6" opacity="0.45"/>
+
+  <!-- Name -->
+  <text x="80" y="170"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="68"
+        font-weight="400"
+        fill="#F5EFE6"
+        letter-spacing="-1">Mark Roderick</text>
+
+  <!-- Divider -->
+  <rect x="80" y="194" width="320" height="1" fill="url(#rule)"/>
+
+  <!-- Tagline -->
+  <text x="80" y="226"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="20"
+        fill="#F5EFE6"
+        opacity="0.9">Administration Systèmes &amp; Réseaux · Cybersécurité</text>
+
+  <!-- Email -->
+  <text x="80" y="252"
+        font-family="'Courier New', monospace"
+        font-size="13"
+        letter-spacing="1.2"
+        fill="#E8C9A8"
+        opacity="0.8">contact@mark-roderick.com</text>
+</svg>
