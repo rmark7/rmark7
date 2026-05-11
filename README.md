@@ -8,7 +8,6 @@
 
 Je travaille principalement avec **Windows Server 2022, Active Directory, Stormshield, Hyper-V, Docker, Bash et PowerShell**. J'aime construire des infrastructures fiables, automatiser ce qui peut l'être et documenter ce qui reste.
 
-📍 **Metz · Grand Est** — mobile sur l'Île-de-France
 🎯 **Objectif** : alternance sysadmin / cybersécurité · Bac+3 · sept. 2026
 
 ---
